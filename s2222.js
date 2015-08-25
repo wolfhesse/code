@@ -2,7 +2,15 @@ var ticker_interval;
 var io = require('socket.io')();
 var last_s;
 io.listen(2222);
-io.on('connection', function (socket) {
+
+// io.configure(function(){
+	// io.set("transports", ["xhr-polling"]);
+	// io.set("polling duration", 10);
+	// io.set("close timeout", 10);
+	// io.set("loglevel", 1);
+// });
+
+io.sockets.on('connection', function (socket) {
 	last_s = socket;
 	if (null == ticker_interval) {
 		ticker_interval = setInterval(function () {
