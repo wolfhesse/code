@@ -1,3 +1,9 @@
+Version 0.3.0:
+ - Merge branch 'develop' of 10.0.0.13:code/rogera into develop
+ - Merge tag '0.2.0' into develop
+ - Merge branch 'r-0.2.0'
+ - wp
+
 Version 0.2.0:
  - update npm
  - Merge tag '0.1.1' into develop
