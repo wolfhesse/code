@@ -1,0 +1,11 @@
+[x] put copies of develop version w/ port 2222 into stdsettings.d
+
+list of files:
+c2222_AseIntercom.js
+c2222.js
+CHANGES
+node_modules
+package.json
+s2222.js
+stdsettings.d
+VERSION
