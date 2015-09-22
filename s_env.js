@@ -1,7 +1,9 @@
 var ticker_interval;
 var io = require('socket.io')();
 var last_s;
-io.listen(2222);
+var port = process.env.PORT || 2222;
+io.listen(port);
+console.log('server listening on port '+port);
 
 // io.configure(function(){
 	// io.set("transports", ["xhr-polling"]);
@@ -23,7 +25,7 @@ io.sockets.on('connection', function (socket) {
 	}
 	socket.on('helo', function (data) {
 		console.log('socket.helo: pre parse');
-		vals = JSON.stringify(data);
+		var vals = JSON.stringify(data);
 		console.log('server: helo data ' + vals);
 		io.emit('data', {'srv:clt:data' : data});
 	});
