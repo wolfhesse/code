@@ -1,3 +1,7 @@
+
+[ ] rename c2222 to c_env
+[ ] env vars SERVER and SERVER_PORT for client
+
 [x] put copies of develop version w/ port 2222 into stdsettings.d
 
 list of files:
