@@ -14,6 +14,7 @@ console.log('server listening on port '+port);
 
 io.sockets.on('connection', function (socket) {
 	last_s = socket;
+	io.emit('event', {'srv:another_client_connected' : new Date});
 	if (null == ticker_interval) {
 		ticker_interval = setInterval(function () {
 			io.emit('tick', new Date);
@@ -30,7 +31,7 @@ io.sockets.on('connection', function (socket) {
 		io.emit('data', {'srv:clt:data' : data});
 	});
 	socket.on('disconnect', function (socket) {
-		io.emit('event', 'another client disconnected');
+		io.emit('event', {'srv:another_client_disconnected': new Date});
 		console.log('server: disconnect');
 	});
 });
