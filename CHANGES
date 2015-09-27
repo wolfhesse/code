@@ -1,3 +1,15 @@
+Version 0.5.0:
+ - buchhaltung
+ - upgrade interactive c9
+ - upgrade interactive c9
+ - helo_handler extra; conn reg, disconn unreg
+ - zdl:markus
+ - changed server events
+ - connect-c9  prevent multiple event registration in client / reconnect-scenario
+ - Merge tag '0.4.0' into develop
+ - Merge branch 'r-0.4.0'
+ - Merge branch 'r-0.4.0'
+
 Version 0.4.0:
  - buchhaltung
  - c9 DF
