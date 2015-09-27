@@ -10,6 +10,8 @@ var socket = require('socket.io-client')(server_address);
 socket.on('connect', function () {
     console.log('client: connect ' + id);
     socket.emit('helo', 'client:' + id);
+    socket.emit('helo', {client: id, date: new Date, cyberport:'23',zdl:'lars 13'});
+    socket.disconnect();
 });
 
 // reconnect scenario: do not register event handlers multiple times..
