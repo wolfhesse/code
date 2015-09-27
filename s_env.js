@@ -15,6 +15,7 @@ console.log('server listening on port '+port);
 io.sockets.on('connection', function (socket) {
 	last_s = socket;
 	io.emit('event', {'srv:another_client_connected' : new Date});
+	
 	if (null == ticker_interval) {
 		ticker_interval = setInterval(function () {
 			io.emit('tick', new Date);
@@ -24,16 +25,22 @@ io.sockets.on('connection', function (socket) {
 		},
 		1000);
 	}
-	socket.on('helo', function (data) {
+	
+	socket.on('helo', helo_handler);
+	
+	socket.on('disconnect', function (socket) {
+		io.emit('event', {'srv:another_client_disconnected': new Date});
+		socket.off('helo',helo_handler);
+		console.log('server: disconnect');
+	});
+	
+	function helo_handler(data){
 		console.log('socket.helo: pre parse');
 		var vals = JSON.stringify(data);
 		console.log('server: helo data ' + vals);
 		io.emit('data', {'srv:clt:data' : data});
-	});
-	socket.on('disconnect', function (socket) {
-		io.emit('event', {'srv:another_client_disconnected': new Date});
-		console.log('server: disconnect');
-	});
+	}
+	
 });
 
 setInterval(function () {
