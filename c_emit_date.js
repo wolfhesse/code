@@ -10,7 +10,7 @@ var socket = require('socket.io-client')(server_address);
 socket.on('connect', function () {
     console.log('client: connect ' + id);
     socket.emit('helo', 'client:' + id);
-    socket.emit('helo', {client: id, date: new Date, cyberport:'23',zdl:'lars 13'});
+    socket.emit('helo', {client: id, date: new Date, cyberport:'23',proto:'db20150922',zdl:'bin beim lift sow und er steht'});
     socket.disconnect();
 });
 
