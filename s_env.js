@@ -39,7 +39,7 @@ io.sockets.on('connection', function(socket) {
 		var vals = JSON.stringify(data);
 		console.log('backbone: helo data ' + vals);
 		io.emit('data', {
-			'backbone:server:data': data
+			'backbone_server_data': data
 		});
 	}
 
