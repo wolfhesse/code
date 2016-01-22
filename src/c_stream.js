@@ -2,6 +2,7 @@
 //
 // unix invocation sample:  
 // set FLG_DISCONN to true or finish with Ctrl-c
+// set WAIT_DISCONN to milliseconds
 // set SERVER to backbone server
 // set SERVER_PORT to backbone server port
 //
@@ -18,6 +19,7 @@ var server_host = process.env.SERVER || 'metaloi.wolfspool.chickenkiller.com';
 var server_port = process.env.SERVER_PORT || 2223;
 var flg_disconn = process.env.FLG_DISCONN || 0;
 //console.log('flg_disconn is ' + flg_disconn);
+var wait_disconn = process.env.WAIT_DISCONN || 2000;
 var server_address = 'http://' + server_host + ':' + server_port + '/';
 //console.log('server_address is ' + server_address);
 var id = Math.random();
@@ -42,7 +44,7 @@ BackboneStream._write = function(chunk, env, next) {
 		setTimeout(function(){
 		// console.log('disconnecting');
 		socket.disconnect();
-		process.exit(0);}, 450);
+		process.exit(0);}, wait_disconn);
 	}
 	next();
 };
