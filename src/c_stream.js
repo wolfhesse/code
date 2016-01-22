@@ -1,7 +1,7 @@
 // textradio client: c_stream
 //
 // unix invocation sample:  
-// set FLG_DISCONN to true or finish with Ctrl-c
+// set FLG_DISCONN to 1 or finish with Ctrl-c
 // set WAIT_DISCONN to milliseconds
 // set SERVER to backbone server
 // set SERVER_PORT to backbone server port
