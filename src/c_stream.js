@@ -1,11 +1,18 @@
+// textradio client: c_stream
+//
 // unix invocation sample:  
+// set FLG_DISCONN to true or finish with Ctrl-c
+// set SERVER to backbone server
+// set SERVER_PORT to backbone server port
+//
 // bash | node c_stream
 // 
 // bash | SERVER=code-wolfhesse.c9.io SERVER_PORT=8080 node c_stream
 //
 // bash | SERVER=metaloi.wolfspool.chickenkiller.com SERVER_PORT=2223 node c_stream
 //
-// set FLG_DISCONN to true or finish with Ctrl-c
+// ls | FLG_DISCONN=1 node c_stream
+//
 
 var server_host = process.env.SERVER || 'metaloi.wolfspool.chickenkiller.com';
 var server_port = process.env.SERVER_PORT || 2223;
