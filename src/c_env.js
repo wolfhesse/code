@@ -1,8 +1,8 @@
 // unix invocation sample:  
 // SERVER=code-wolfhesse.c9.io SERVER_PORT=8080 node c_env
 
-var server_host = process.env.SERVER || 'wolfhesse.chickenkiller.com';
-var server_port = process.env.SERVER_PORT || 2222;
+var server_host = process.env.SERVER || 'metaloi.wolfspool.chickenkiller.com';
+var server_port = process.env.SERVER_PORT || 2223;
 var server_address = 'http://' + server_host + ':' + server_port + '/';
 console.log('server_address is ' + server_address);
 var id = Math.random();
