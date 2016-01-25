@@ -1,4 +1,4 @@
-FROM dockerfiles/nodejs
+FROM dockerfile/nodejs
 MAINTAINER @wolfhesse "wolfgang.schuessel@gmail.com"
 
 ENV DEBIAN_FRONTEND noninteractive
