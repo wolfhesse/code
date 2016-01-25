@@ -1,0 +1,8 @@
+t1_backbone:
+  restart: always
+  image: type1tv/backbone:latest
+  ports:
+    - 3222:2222
+
+  environment:
+    T1_BACKBONE_PORT: '2222'
