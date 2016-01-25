@@ -1,3 +1,26 @@
+Version 0.6.0:
+ - wp
+ - wp
+ - wp
+ - reloc sample.{n} files
+ - wp
+ - wp
+ - metaloi 2223 nginx reverse proxy backbone conn #dev
+ - FLG_DISCONN 1 or 0
+ - adding linger bef disconn
+ - textradio client c_stream
+ - c_stream.js sample
+ - wp
+ - Merge branch 'develop' of localhost:/code into develop
+ - split src and docker-src
+ - wp
+ - idea
+ - next milestone goal: make-code-bus
+ - Merge remote-tracking branch 'github/c9' into develop
+ - wp
+ - Merge tag '0.5.0' into develop
+ - Merge branch 'r-0.5.0'
+
 Version 0.5.0:
  - buchhaltung
  - upgrade interactive c9
