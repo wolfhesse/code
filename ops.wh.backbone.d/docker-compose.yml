@@ -1,0 +1,22 @@
+backbone:
+  restart: always
+  image: wolfhesse/backbone:latest
+  ports:
+    - 2222:2222
+  #dns: 8.8.8.8
+  #dns: "8.8.8.8"
+
+  environment:
+    #SERVER_ALT: metaloi.wolfspool.chickenkiller.com
+    SERVER: metaloi.wolfspool.chickenkiller.com
+    #SERVER: "10.0.0.21"
+    SERVER_PORT: '2222'
+    #REGISTRY_HTTP_TLS_CERTIFICATE: /certs/domain.crt
+    #REGISTRY_HTTP_TLS_KEY: /certs/domain.key
+    #REGISTRY_AUTH: htpasswd
+    #REGISTRY_AUTH_HTPASSWD_PATH: /auth/htpasswd
+    #REGISTRY_AUTH_HTPASSWD_REALM: Ase Crown Realm
+  #volumes:
+    #- /opt/ops/data:/var/lib/registry
+    #- /opt/ops/certs:/certs
+    #- /opt/ops/auth:/auth
