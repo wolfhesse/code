@@ -1,0 +1,14 @@
+{
+	"name": "textradio-rogera-01",
+	"version": "0.0.0",
+	"description": "A simple streaming server using socket.io",
+	"main": "index.js",
+	"author": "@wolfhesse",
+	"private": true,
+	"license": "BSD",
+	"dependencies": {
+		"socket.io-client": "~1.3.7",
+		"socket.io": "~1.3.7"
+	}
+}
+
