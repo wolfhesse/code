@@ -1,4 +1,21 @@
 
+### purpose
+
+#### business
+
+backbone implementiert das HELO protokoll mit einem verb: 'helo'
+
+jedes 'helo' paket wird als 'data' an alle verbundenen clients geschickt.
+
+#### ops
+
+- verb 'tick'
+	-  z zt: 2 sek
+- verb 'event'
+	- verwaltungsinfo
+
+### build and run
+
 #### building the docker image
 
 ```sh
