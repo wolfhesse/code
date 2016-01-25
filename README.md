@@ -39,10 +39,16 @@ in ./src/. c_stream ist ein stdout 2 backbone 'tee'; data_verb = 'chunk'
 
 #### building the docker image
 
+trick: grep build RE tab
+
 ```sh
 git clone git@bitbucket.org:type1tv/type1tv-backbone.git
 
-docker build -t type1tv/backbone ./type1tv-backbone-docker/
+docker build -t type1tv/backbone ./
+
+alt and publish:
+docker build -t wolfhesse/backbone ./
+
 ```
 
 #### running the docker image
@@ -52,4 +58,20 @@ cd ops.t1.backbone.d
 docker-compose up
 ```
 
-----
+---
+
+### system setup
+
+#### granularity:
+	- system
+	- cluster = a couple of systems
+	- pool = a couple of clusters or systems
+
+#### convention
+exposed port in production is 3222 for system-backbone
+exposed port in production is 3223 for cluster-backbone
+
+exposed port in development is 2222 for system-backbone
+exposed port in development is 2223 fro cluster-backbone (nginx reverse translation)
+
+
