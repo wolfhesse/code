@@ -21,7 +21,12 @@ socket.on('tick', function (data) {
 });
 
 socket.on('data', function (data) {
-    console.log('{ "client": ' + id + ', "signal": "data", "data": ' + JSON.stringify(data) +' }');
+//    console.log('{ "client": ' + id + ', "signal": "data", "data": ' + JSON.stringify(data) +' }');
+    console.log('x_client:  ' + id);
+try{
+    console.log('x_data:    ' + data['backbone:server:data'].chunk);
+} catch (x) {}
+
 });
 
 socket.on('event', function (data) {

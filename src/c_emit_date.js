@@ -3,7 +3,7 @@
 
 var server_host = process.env.SERVER || 'wolfhesse.chickenkiller.com';
 var server_port = process.env.SERVER_PORT || 2222;
-var server_address = 'https://' + server_host + ':' + server_port + '/';
+var server_address = 'http://' + server_host + ':' + server_port + '/';
 console.log('server_address is ' + server_address);
 var id = Math.random();
 var socket = require('socket.io-client')(server_address);
