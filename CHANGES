@@ -1,3 +1,13 @@
+Version 0.7.4:
+ - buchhaltung
+ - laeuft auf os23
+ - installier dir gistbox
+ - desc: proto, build and run
+ - rq node:0.12 docker build
+ - Merge tag '0.7.3' into develop
+ - Merge branch 'release/0.7.3'
+ - buchhaltung und beschreibung git flow release
+
 Version 0.7.3:
 
 
