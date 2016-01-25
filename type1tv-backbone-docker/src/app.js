@@ -1,7 +1,7 @@
 var ticker_interval;
 var io = require('socket.io')();
 var last_s;
-var port = process.env.PORT || 2222;
+var port = process.env.T1_BACKBONE_PORT || 2222;
 io.listen(port);
 console.log('backbone listening on port ' + port);
 
