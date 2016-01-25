@@ -1,3 +1,11 @@
+Version 0.7.2:
+ - buchhaltung
+ - Merge branch 'develop' into rogera
+ - removed .idea .d
+ - Merge tag '0.7.1' into develop
+ - Merge branch 'r-0.7.1'
+ - buchhaltung x-todo
+
 Version 0.7.1:
  - Merge tag '0.7.0' into develop
  - Merge branch 'r-0.7.0'
