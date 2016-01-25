@@ -10,7 +10,7 @@ RUN useradd -ms /bin/bash rogera
 
 RUN echo "net.ipc4.ip_forward=1" >> /etc/sysctl.conf
 
-ADD ./src /home/rogera/app
+ADD ../src /home/rogera/app
 RUN chown -R rogera:rogera /home/rogera
 RUN rm -r /tmp/*
 
