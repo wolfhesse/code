@@ -1,4 +1,6 @@
-FROM dockerfile/nodejs
+# https://github.com/dockerfile/nodejs/issues/11
+FROM node:0.12
+
 MAINTAINER @wolfhesse "wolfgang.schuessel@gmail.com"
 
 ENV DEBIAN_FRONTEND noninteractive
