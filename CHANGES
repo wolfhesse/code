@@ -1,3 +1,10 @@
+Version 0.7.6:
+ - buchhaltung
+ - Merge branch 'type1tv' into release/0.7.6
+ - cloud.type1.tv konfig, verzeichnisnamen, gebrauchsanweisung des arztes. keine selbstmedikation, bitte!
+ - Merge tag '0.7.5' into develop
+ - Merge branch 'release/0.7.5'
+
 Version 0.7.5:
  - buchhaltung
  - nur noch ein Dockerfile
