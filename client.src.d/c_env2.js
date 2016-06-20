@@ -17,7 +17,7 @@ socket.on('connect', function () {
 // reconnect scenario: do not register event handlers multiple times..
 
 socket.on('tick', function (data) {
-    console.log('{ "client": ' + id + ', "signal": "tick", "data": "' + data +'" }');
+    console.log('{ "client": ' + id + ', "SIGTICK":"SELF", "signal": "tick", "data": "' + data +'" }');
 });
 
 socket.on('data', function (data) {
