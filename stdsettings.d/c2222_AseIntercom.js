@@ -1,5 +1,5 @@
 var id=Math.random();
-var socket = require('socket.io-client')('http://metaloi.wolfspool.chickenkiller.com/');
+var socket = require('socket.io-client')('http://metaloi.base.wolfspool.at/');
 socket.on('connect', function(){
 	console.log('client: connect '+id);
 	socket.emit('hello','client');

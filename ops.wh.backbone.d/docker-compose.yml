@@ -7,8 +7,8 @@ backbone:
   #dns: "8.8.8.8"
 
   environment:
-    #SERVER_ALT: metaloi.wolfspool.chickenkiller.com
-    SERVER: metaloi.wolfspool.chickenkiller.com
+    #SERVER_ALT: metaloi.base.wolfspool.at
+    SERVER: metaloi.base.wolfspool.at
     #SERVER: "10.0.0.21"
     SERVER_PORT: '2222'
     #REGISTRY_HTTP_TLS_CERTIFICATE: /certs/domain.crt

@@ -61,7 +61,7 @@ in ./client.src/. c_stream ist ein stdout 2 backbone 'tee'; data_verb = 'chunk'
 
 ein datenstrom der mit c_env | c_stream geroutet wird, gefilterte transformationspipeline mit jq
 
-rogera@core:~/code/rogera$ SERVER=metaloi.wolfspool.chickenkiller.com SERVER_PORT=3223 node c_env | grep data | grep -v c_stream | jq --compact-output --unbuffered '{ fpat22: .data|."backbone:server:data"? }' >../data.d/sample.0.res.json
+rogera@core:~/code/rogera$ SERVER=metaloi.base.wolfspool.at SERVER_PORT=3223 node c_env | grep data | grep -v c_stream | jq --compact-output --unbuffered '{ fpat22: .data|."backbone:server:data"? }' >../data.d/sample.0.res.json
 
 ```
 

@@ -3,7 +3,7 @@
 
 // r20160122 output json only for better integration in jq pipelines
 
-var server_host = process.env.SERVER || 'metaloi.wolfspool.chickenkiller.com';
+var server_host = process.env.SERVER || 'metaloi.base.wolfspool.at';
 var server_port = process.env.SERVER_PORT || 2223;
 var server_address = 'http://' + server_host + ':' + server_port + '/';
 console.log('{ "log": "server_address is ' + server_address + '" }');

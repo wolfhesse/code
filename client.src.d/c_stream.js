@@ -10,12 +10,12 @@
 // 
 // bash | SERVER=code-wolfhesse.c9.io SERVER_PORT=8080 node c_stream
 //
-// bash | SERVER=metaloi.wolfspool.chickenkiller.com SERVER_PORT=2223 node c_stream
+// bash | SERVER=metaloi.base.wolfspool.at SERVER_PORT=2223 node c_stream
 //
 // ls | FLG_DISCONN=1 node c_stream
 //
 
-var server_host = process.env.SERVER || 'metaloi.wolfspool.chickenkiller.com';
+var server_host = process.env.SERVER || 'metaloi.base.wolfspool.at';
 var server_port = process.env.SERVER_PORT || 2223;
 var flg_disconn = process.env.FLG_DISCONN || 0;
 //console.log('flg_disconn is ' + flg_disconn);
